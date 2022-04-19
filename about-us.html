@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" title="Logo">
+                    <img src="photos/Mr. jim's logo.svg" alt="Restaurant Logo" height="100px" width="100px
+                     class="img-responsive">
+                </a>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="categories.html">Categories</a>
+                <a href="about-us.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+
+    <!--About -->
+    <h1 class="title">About</h1>
+
+    <div class="group-2">
+        <div class="historymontserrat-extra-bold-black-24px">History</div>
+        <p class="lorem-ipsum-dolor-simontserrat-normal-black-16px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam habitasse malesuada id rhoncus vitae. Imperdiet sed phasellus semper
+          senectus odio fermentum. Duis vitae nulla justo, libero sit in. Sit ac arcu sodales tortor.
+        </p>
+    </div>
+
+    <img class="pexels-anna-shvets-5953550-1" src="photos/pexels-anna-shvets-5953550-1@2x.png" />
+    <div class="group-1">
+      <div class="why-usmontserrat-extra-bold-black-24px">Why Us?</div>
+      <p class="lorem-ipsum-dolor-simontserrat-normal-black-16px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam habitasse malesuada id rhoncus vitae. Imperdiet sed phasellus semper
+        senectus odio fermentum. Duis vitae nulla justo, libero sit in. Sit ac arcu sodales tortor.
+      </p>
+    </div>
+    <img class="line-7" src="photos/line-7@2x.svg" />
+    <div class="group-3">
+      <div class="contact-usmontserrat-extra-bold-black-24px">Contact Us</div>
+      <p class="lorem-ipsum-dolor-simontserrat-normal-black-16px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam habitasse malesuada id rhoncus vitae. Imperdiet sed phasellus semper
+        senectus odio fermentum. Duis vitae nulla justo, libero sit in. Sit ac arcu sodales tortor.
+      </p>
+    </div>
+    <img class="stock" src="photos/stock@2x.svg" />
+    <div class="group-4">
+      <div class="free-pizza-surveymontserrat-extra-bold-black-24px">Free Pizza Survey</div>
+      <p class="lorem-ipsum-dolor-simontserrat-normal-black-16px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam habitasse malesuada id rhoncus vitae. Imperdiet sed phasellus semper
+        senectus odio fermentum. Duis vitae nulla justo, libero sit in. Sit ac arcu sodales tortor.
+      </p>
+    </div>
+  </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>
