@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" title="Logo">
+                    <img src="photos/Mr. jim's logo.svg" alt="Restaurant Logo" height="100px" width="100px
+                     class="img-responsive">
+                </a>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="categories.html">Categories</a>
+                <a href="about-us.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+
+    <!--Insert button area-->
+    <section class="button-area">
+      <div class="button-container">
+        <form>
+          <input type="button" id="carry-out" name="Carry Out" value="Carry Out">
+          <label for="Carry Out"> OR  </label>
+          <input type="button" id="delivery" name="Delivery" value="Delivery">
+          <label for="Delivery"></label>
+        </form>
+      </div>
+
+    </section>
+   <!-- End of button area -->
+
+   <!--Hero Img-->
+   <section class="hero-img">
+     <div class="hero-container">
+       <img class="hero" src="photos/hero-img.svg">
+     </div>
+   </section>
+
+   <section class="sale-tiles">
+     <div class="sale-tiles-container">
+       <img class="sale-1" src="photos/d'lish-ad.svg">
+       <img class="sale-2" src="photos/Online-order-ad.svg">
+       <img class="sale-3" src="photos/15-off-ad.svg">
+       <img class="sale-4" src="photos/2-5 ad.svg">
+     </div>
+   </section>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>
